@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+</head>
+<body>
+    <%- include("header.ejs")  %>
+<%- include("nav.ejs")  %>
+
+<h4>this is Update page</h4>
+<div class="box">
+    
+<form action="/update/<%=index%>" method="post">
+    <input disabled value="<%=books.id%>" type="number" placeholder="id" name="id"><br>
+    <input value="<%=books.name%>" type="text" placeholder="name" name="name"><br>
+    <input  value="<%=books.author%>" type="text" placeholder="author" name="author"><br>
+    <input value="<%=books.image%>" type="url" placeholder="image" name="image"><br>
+    <input value="<%=books.description%>" type="text" placeholder="description" name="description"><br>
+    <input value="<%=books.year%>" type="number" placeholder="year" name="year"><br>
+    <input value="<%=books.prize%>" type="number" placeholder="prize" name="prize"><br>
+    <input value="<%=books.page%>" type="number" placeholder="page" name="page"><br>
+    <button>update</button>
+</form>
+</div>
+<hr>
+</body>
+</html>

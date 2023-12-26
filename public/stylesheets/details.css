@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+height: 100%;
+}
+
+body{
+    background-color: #3d3d38;
+    color: #fff;
+}
+
+h4{
+    text-align: center;
+    font-size: 30px;
+}
+
+.box{
+    width: 30%;
+    min-height: 30vh;
+    background-color: rgba(100, 148, 237, 0.653);
+margin: 3vw;
+}
+.box img{
+    width: 200px;
+    height: 200px;
+}
+
+.box a{
+    width: 50%;
+    padding: 8px 12px;
+    font-size: 20px;
+    background-color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px;
+text-align: center;
+}

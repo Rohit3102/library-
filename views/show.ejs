@@ -1,0 +1,17 @@
+<%- include("header.ejs")  %>
+<%- include("nav.ejs")  %>
+<link rel="stylesheet" href="./stylesheets/show.css">
+<h4>this is Show page</h4>
+
+<% books.forEach(function(e,index){%>
+    <div class="box">
+        <h2><%= e.id %></h2>
+        <h2><%= e.name %></h2>
+        <img src="<%= e.image%>" alt="">
+        
+    <a href="/details/<%=index%>">Explore more</a>
+       
+</div> 
+<hr>
+<%})%>
+<%- include("footer.ejs")  %>
